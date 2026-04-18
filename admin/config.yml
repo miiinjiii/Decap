@@ -1,0 +1,22 @@
+backend:
+  name: test-repo
+
+local_backend:
+  url: http://192.168.1.151:8081/api/v1
+  allowed_hosts:
+    - 192.168.1.151
+
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
