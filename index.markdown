@@ -5,8 +5,23 @@ title: Home
 
 # Welcome
 
-This is my CMS project with Jekyll + Decap CMS.
+Welcome to my personal hobby website!
+
+This page is about my hobbies and interests:
+- Pets
+- Gaming
+- Magic: The Gathering
+- Darts
 
 ## Pages
-- [Installation Guide](/installation.html)
-- [About CMS](/about.html)
+
+- [Pets](/pets.html)
+- [Gaming](/gaming.html)
+- [Magic & Darts](/magic.html)
+- [Installation Manual](/installation.html)
+
+## My Latest Posts
+
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
