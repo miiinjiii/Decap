@@ -31,23 +31,23 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-      - label: "Pets"
-        name: "pets"
-        file: "pets.md"
+      - label: "Music"
+        name: "music"
+        file: "music.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-      - label: "Gaming"
-        name: "gaming"
-        file: "gaming.md"
+      - label: "TCG"
+        name: "tccg"
+        file: "tcg.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-      - label: "Magic and Darts"
-        name: "magic"
-        file: "magic.md"
+      - label: "Games"
+        name: "games"
+        file: "games.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
