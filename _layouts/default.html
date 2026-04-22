@@ -1,0 +1,86 @@
+O<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #5b7db1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background:  #7fa1d6;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      color: #666;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Hobby Website</h1>
+  </header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/pets.html">Pets</a>
+    <a href="/gaming.html">Gaming</a>
+    <a href="/magic.html">Magic & Darts</a>
+    <a href="/installation.html">Installation</a>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>Created with Jekyll and Decap CMS</p>
+  </footer>
+</body>
+</html>
