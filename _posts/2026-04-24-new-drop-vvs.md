@@ -1,9 +1,10 @@
 ---
+layout: post
 title: VVS – EP Review
 date: 2026-04-22T10:20:00.000+02:00
 category: Music
 ---
-Recently, on April 22nd one of my favorite groups released a new EP called $TAY THE NIGHT. 
+Recently, on April 22nd one of my favorite groups released a new EP called $TAY THE NIGHT.  
 
 With *$TAY THE NIGHT*, VVS shows once again why they are one of the most exciting groups for me. The EP combines strong rap, catchy beats, and exactly the kind of energy I love in their music.
 

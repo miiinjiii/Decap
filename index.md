@@ -3,23 +3,25 @@ layout: default
 title: Home
 ---
 
-# Welcome
+# Welcome to My Blog
 
-Welcome to my personal blog!
+Hi, welcome to my personal blog!
 
-This website is about my interests and hobbies:
-- Music
-- Trading Card Games
-- Gaming
+Here I write about the things I enjoy the most: music, trading card games, gaming, and my CMS project.
 
-## Pages
+## What you can find here
 
-- [Music](/music.html)
-- [TCG](/tcg.html)
-- [Installation Manual](/installation.html)
+### Music
+Album and EP reviews, favorite songs, and artists I currently listen to.
+
+### TCG
+Posts about trading card games, collections, cards, and personal opinions.
+
+### Installation Manual
+A short documentation about how this website was created with Jekyll, Decap CMS, GitHub, and Netlify.
 
 ## Latest Posts
 
-{% for post in site.posts %}
+{% for post in site.posts limit:3 %}
 - [{{ post.title }}]({{ post.url }})
 {% endfor %}
