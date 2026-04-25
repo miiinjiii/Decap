@@ -10,5 +10,5 @@ export GEM_HOME="/home/minji/gems"
 export PATH="/home/minji/gems/bin:/usr/bin:/bin:$PATH"
 
 nohup npx decap-server > /home/minji/Decap/decap.log 2>&1 &
-nohup bundle exec jekyll serve --host 0.0.0.0 --future > /home/minji/Decap/jekyll.log 2>&1
+nohup bundle exec jekyll serve --host 0.0.0.0 --port 4000  --future > /home/minji/Decap/jekyll.log 2>&1
 

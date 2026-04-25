@@ -16,7 +16,6 @@ This website is about my interests and hobbies:
 
 - [Music](/music.html)
 - [TCG](/tcg.html)
-- [Games](/games.html)
 - [Installation Manual](/installation.html)
 
 ## Latest Posts
