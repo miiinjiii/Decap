@@ -4,116 +4,151 @@ title: Installation Guide
 ---
 # Installation Guide
 
-This page explains how I created my Ubuntu Server virtual machine and installed my CMS project with Jekyll and Decap CMS.
+This page explains how I created and deployed my CMS project using Jekyll, Decap CMS, GitHub, and Netlify.
+
+The goal was to create a personal blog website that is publicly accessible and easy to manage through an online CMS.
+
+- - -
 
 ## Step 1 – Create the Virtual Machine
 
-First, I opened VirtualBox and clicked on "New".
+First, I created an Ubuntu Server virtual machine using VirtualBox.
 
-![](/images/uploads/vm-install_1.png "Setting Up New VM")
+![](/images/uploads/vm-install_1.png)
 
-I created a new virtual machine called CMS-Decap and selected the Ubuntu Server ISO file.
-
-![](/images/uploads/vm-install_2.png)
-
-I disabled the option for unattended installation because I wanted to configure everything manually.
-
-## Step 2 – Configure Hardware
-
-Next, I configured the virtual hardware.
-
-I selected:
+I selected the Ubuntu Server ISO and configured:
 
 * 4 GB RAM
 * 2 CPU cores
-* 25 GB virtual disk
+* a virtual disk for the system
 
 ![](/images/uploads/vm-install_3.png)
 
-![](/images/uploads/vm-install_4.png)
-
-This was enough for running Ubuntu Server, Jekyll, and Decap CMS.
-
-## Step 3 – Start Ubuntu Server Installation
-
-After clicking "Finish", I started the VM.
-
-At startup, I selected:
-
-"Try or Install Ubuntu Server"
-
-![](/images/uploads/vm-install_5.png)
-
-
-
-Then I continued with:
-
-* English language
-* German keyboard layout
-* Continue without updating
-
-## Step 4 – Basic Server Setup
-
-I selected the standard Ubuntu Server installation.
-
-For the network settings, I used the default configuration.
-
-I skipped:
-
-* Proxy configuration
-* Ubuntu Pro upgrade
-
-For storage, I selected:
-
-"Use an entire disk"
-
-and confirmed the installation.
-
-## Step 5 – Create User and Install OpenSSH
-
-Next, I created my user account and password.
-
-![](/images/uploads/vm-install_15.png)
-
-I also installed the OpenSSH Server.
+I also installed OpenSSH Server to make remote access easier from my main computer.
 
 ![](/images/uploads/vm-install_16.png)
 
-This is very useful because it allows SSH access from the main PC to the virtual machine.
+This allowed me to work on the VM directly through Windows Terminal using SSH.
 
-## Step 6 – Install Jekyll and Decap CMS
+- - -
 
-After Ubuntu was installed, I installed:
+## Step 2 – Install Jekyll
+
+After Ubuntu was installed, I updated the system and installed:
 
 * Ruby
 * Bundler
 * Jekyll
-* Node.js
-* npm
 
-Then I created the Jekyll project and added Decap CMS.
+Jekyll is the static site generator used for the website.
 
-I configured:
+It creates the HTML pages from Markdown files and makes the website fast and easy to manage.
 
-* admin/index.html
-* admin/config.yml
+- - -
 
-## Step 7 – Start the Local CMS
+## Step 3 – Install Decap CMS
 
-To run the project locally, I started:
+Next, I added Decap CMS to the Jekyll project.
 
-* the Jekyll server
-* the Decap proxy server
+I created:
 
-This allowed me to open both:
+* `admin/index.html`
+* `admin/config.yml`
 
-* Website: http://localhost:4000
-* CMS Admin: http://localhost:4000/admin
+This created the CMS admin panel where pages and blog posts can be edited directly in the browser.
+
+Decap CMS works with Git, so all content changes are saved directly inside the GitHub repository. :contentReference\[oaicite:0]{index=0}
+
+- - -
+
+## Step 4 – Push Project to GitHub
+
+After the local setup was finished, I created a GitHub repository and pushed the full project online.
+
+This included:
+
+* all pages
+* blog posts
+* images
+* CMS configuration
+* Jekyll files
+
+GitHub works as the storage backend for all content.
+
+- - -
+
+## Step 5 – Deploy with Netlify
+
+To make the website publicly accessible, I connected the GitHub repository to Netlify.
+
+In Netlify I selected:
+
+* Add new site
+* Import from Git
+* GitHub repository
+
+Build settings:
+
+* Build command: `bundle exec jekyll build`
+* Publish directory: `_site`
+
+This automatically deployed the website online.
+
+Now the page could be opened with a public Netlify link.
+
+- - -
+
+## Step 6 – Enable Netlify Identity
+
+For secure CMS login, I enabled Netlify Identity.
+
+Path:
+
+`Project Configuration → Identity → Enable Identity`
+
+This created the authentication system for Decap CMS. Netlify Identity provides authentication and user management for CMS users. :contentReference\[oaicite:1]{index=1}
+
+I also enabled Google Login as an external provider for easier access.
+
+- - -
+
+## Step 7 – Enable Git Gateway
+
+Next, I enabled Git Gateway.
+
+Path:
+
+`Identity → Services → Git Gateway`
+
+This connects Decap CMS with the GitHub repository and allows authenticated users to create and update content without using Git commands manually. Leaving the Roles field empty allows all logged-in Identity users to access the CMS. :contentReference\[oaicite:2]{index=2}
+
+For this project, I left the Roles field empty because only one user manages the content.
+
+- - -
+
+## Step 8 – Online CMS Login
+
+Finally, I opened:
+
+* Website: `https://decap-cms-minij.netlify.app`
+* Admin Panel: `https://decap-cms-minij.netlify.app/admin`
+
+I logged in using Netlify Identity with Google Login.
+
+Now I can edit:
+
+* Pages
+* Blog Posts
+* Images
+
+directly inside the browser without editing files manually.
+
+- - -
 
 ## Result
 
-The CMS is now fully working.
+The CMS is now fully working online.
 
-I can manage my personal blog content directly inside the browser using Decap CMS.
+The website is publicly accessible for users and customers, while the admin area allows secure content management through Decap CMS.
 
-This makes content editing much easier than editing Markdown files manually.
+This creates a realistic customer presentation setup where clients can access the website online while the administrator manages all content through the CMS.
