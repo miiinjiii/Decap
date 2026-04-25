@@ -1,6 +1,6 @@
 ---
 title: Kehlani – KEHLANI
-date: 2026-04-25T15:48:00.000+02:00
+date: 2026-04-24T15:48:00.000+02:00
 ---
 
 With *KEHLANI*, Kehlani proves once again why she is one of the strongest voices in modern R&B. After “Folded” already set the bar incredibly high by winning two Grammy Awards for Best R&B Song and Best R&B Performance, expectations for this album were huge—but she definitely did not disappoint. 
