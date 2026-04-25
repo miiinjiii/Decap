@@ -1,6 +1,6 @@
 ---
 title: VVS – EP Review
-date: 2026-04-24T10:20:00.000+02:00
+date: 2026-04-22T10:20:00.000+02:00
 category: Music
 ---
 Recently, on April 22nd one of my favorite groups released a new EP called $TAY THE NIGHT. 
