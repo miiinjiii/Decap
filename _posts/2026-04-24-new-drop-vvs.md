@@ -19,15 +19,13 @@ For me, *$TAY THE NIGHT* is a release I will definitely keep listening to—stro
 ## Favorite Track
 
 * $TAY THE NIGHT
-* VV$
+* V.V.$
 * COUNT IT UP
 * BOTTLE$
 
 ## Listen Here
 
-![](/images/uploads/screenshot-2026-04-25-155932.png)
-
-[Spotify Link](https://open.spotify.com/intl-de/album/6gaj8bIMXK8MW105mSijx7?si=vf1Yi2AlTFqrqCRDs457qA)
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6gaj8bIMXK8MW105mSijx7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ![](/images/uploads/profile.jpg)
 

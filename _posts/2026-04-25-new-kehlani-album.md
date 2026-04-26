@@ -23,7 +23,5 @@ For me, *KEHLANI* is an album that lives up to the hype—strong vocals, emotion
 
 ## Listen Here
 
-![](/images/uploads/screenshot-2026-04-25-154645.png)
-
-[Spotify Album](https://open.spotify.com/intl-de/album/2xkYTmqjear3lSGydIn7wh?si=4GRgndSvR9ydMNwDjQiavgYOUR_LINK)
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2xkYTmqjear3lSGydIn7wh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
