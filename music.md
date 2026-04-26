@@ -44,6 +44,4 @@ I especially enjoy finding new songs and creating playlists for different situat
 
 ## Currently Listening to...
 
-[Here to the song!](https://open.spotify.com/intl-de/track/1sQiHcA0AkwUMsSoftUa9U?si=25daf1a67c704e4b)
-
-![ikiii](/images/uploads/screenshot-2026-04-22-192901.png "this is screenshot")
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6mGCp9gNIKggxul5wy5Cca?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
